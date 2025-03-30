@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NILU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div class="container" id="home-screen">
+        <div class="couple-image">
+            <img src="couple/couple-sitting-on-bench-svgrepo-com.svg" alt="Imagem do casal">
+        </div>
+        <h1>Lucas e Monique</h1>
+        <button onclick="showCounter()">Tempo Junto 💍</button>
+        <button onclick="showHowMutchTime()">A quanto tempo nos conhecemos ⏱️</button>
+    </div>
+
+    <!-- Tela do Contador de quanto tesmpo estamos juntos -->
+    <div class="container" id="counter-screen" style="display: none;">
+        <!-- Botão de voltar -->
+        <div class="back-button-container">        
+            <button class="back-button" onclick="goHome()">&#8592;</button>
+        </div>
+        <h1>Lucas e Monique</h1>
+        <h3>Estamos juntos há:</h3>
+        <div id="time-display">
+            <h2>Esperando a dona encrenca saber oque quer da vida</h2><br>
+            <!--<div class="time-unit"><span id="years">0</span> anos</div>
+            <div class="time-unit"><span id="months">0</span> meses</div>
+            <div class="time-unit"><span id="days">0</span> dias</div>
+            <div class="time-unit"><span id="hours">0</span> horas</div>
+            <div class="time-unit"><span id="minutes">0</span> minutos</div>
+            <div class="time-unit"><span id="seconds">0</span> segundos</div>-->
+        </div>
+    </div>
+
+    <!-- Tela do Contador de quanto tempo nos conhecemos -->
+    <div class="container" id="how-mutch-time-screen" style="display: none;">
+        <!-- Botão de voltar -->
+        <div class="back-button-container">        
+            <button class="back-button" onclick="goHome()">&#8592;</button>
+        </div>
+        <h1>Lucas e Monique</h1>
+        <h3>nos conhecemos há:</h3>
+        <div id="time-display">
+            <div class="time-unit"><span id="years-mt">0</span> anos</div>
+            <div class="time-unit"><span id="months-mt">0</span> meses</div>
+            <div class="time-unit"><span id="days-mt">0</span> dias</div>
+            <div class="time-unit"><span id="hours-mt">0</span> horas</div>
+            <div class="time-unit"><span id="minutes-mt">0</span> minutos</div>
+            <div class="time-unit"><span id="seconds-mt">0</span> segundos</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      </script>
+
+      <footer>
+        <div class="animated-text" id="animated-text">
+          <!-- Texto será adicionado pelo JavaScript -->
+        </div>
+      </footer>
+      <script src="love.js"></script>
+</body>
+</html>
